@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsivnes.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Interactive rating</h1>
+    <button type="button" onclick="toggleTheme()" id="toggle-theme">Dark</button>
+  </header>
+
+  <main class="container">
+    <section class="box-one">
+
+      <div class="box-one-image"><img src="assets/images/icon-star.svg" alt="icon star" /></div>
+
+      <div class="box-one-content-one">
+        <h1>How did we do?</h1>
+      </div>
+
+      <div class="box-one-content-two">
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!</p>
+      </div>
+
+      <div class="rating-buttons">
+        <input type="button" value="1" class="btn" data-value="1"></input>
+        <input type="button" value="2" class="btn" data-value="2"></input>
+        <input type="button" value="3" class="btn" data-value="3"></input>
+        <input type="button" value="4" class="btn" data-value="4"></input>
+        <input type="button" value="5" class="btn" data-value="5"></input>
+      </div>
+
+      <button type="submit" id="submit-btn" onclick="getValueButton()">Submit</button>
+    </section>
+
+    <section class="box-two">
+
+      <div class="box-two-content">
+        <img src="assets/images/illustration-thank-you.svg" alt="logo thank you">
+        <p>
+          You selected <span id="selected-rating"></span> out of 5 Thank you!
+        </p>
+        <p>We appreciate you taking the time to give a rating.</p>
+        <p>If you ever need more support, don’t hesitate to get in touch!</p>
+
+        <a href="index.html">Return Homepage </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#"><a
+          href="https://www.linkedin.com/in/daniel-kremes/" target="_blank">Daniel Kremes</a></a>.
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

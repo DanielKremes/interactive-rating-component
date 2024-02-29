@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color-container);
+    color: var(--color-header-footer);
+  }
+
+  .box-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 2rem;
+    height: auto;
+    padding: 1rem 1rem;
+    background-color: var(--background-color-box-one);
+    width: 90%;
+  }
+
+  .box-one-image {
+    margin-right: auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--background-color-container);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-one-image img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .rating-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box-one button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .box-one button:hover {
+    background-color: var(--color-box-two);
+    color: var(--color-header-footer);
+  }
+
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: var(--background-color-container);
+    color: var(--color-box-content-two-paragraph);
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: var(--btn-hover);
+  }
+
+  .btn:focus {
+    background-color: var(--color-red);
+    color: var(--color-header-footer);
+  }
+
+  .box-one-content-one {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box-one-content-two > p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .box-two {
+    display: none;
+    color: var(--color-box-two);
+    gap: 0.5rem;
+    text-align: center;
+    height: auto;
+    width: 90%;
+    border-radius: 2rem;
+    background-color: var(--background-color-box-two);
+  }
+
+  .box-two-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .box-two-content img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .box-one {
+    height: auto;
+    width: 50%;
+    margin: 1rem 0px;
+  }
+
+  .box-two {
+    height: auto;
+  }
+}
